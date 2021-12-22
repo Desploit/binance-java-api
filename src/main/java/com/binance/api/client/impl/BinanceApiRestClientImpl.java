@@ -283,7 +283,7 @@ public class BinanceApiRestClientImpl implements BinanceApiRestClient {
 
   @Override
   public String startUserDataStream() {
-    return executeSync(binanceApiService.startUserDataStream()).toString();
+    return executeSync(binanceApiService.startUserDataStream()).getListenKey();
   }
 
   @Override
